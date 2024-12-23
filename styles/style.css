@@ -6,7 +6,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding-right: var(--page-side-padding);
 }
 
 .header {
@@ -16,6 +15,7 @@
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr;
   position: relative;
+  padding-right: var(--page-side-padding);
 }
 
 .rec {
@@ -144,13 +144,14 @@
   border-color: var(--sect-title-text-color);
   position: absolute;
   top: 20px;
-  right: 0px;
+  right: 20px;
 }
 
 .content {
   width: 100%;
   margin-block-start: var(--content-margin-top);
   padding-left: var(--page-side-padding);
+  padding-right: var(--page-side-padding);
 }
 
 .content__section:not(:last-child) {
@@ -289,7 +290,6 @@
 
 .footer {
   position: relative;
-  padding-left: var(--page-side-padding);
 }
 
 .footer::before {
@@ -301,6 +301,7 @@
   border-color: var(--sect-title-text-color);
   position: absolute;
   bottom: 20px;
+  left: 20px;
 }
 
 .footer::after {
@@ -312,7 +313,7 @@
   border-color: var(--sect-title-text-color);
   position: absolute;
   top: 20px;
-  right: 0px;
+  right: 20px;
 }
 
 .footer__title {
@@ -468,7 +469,6 @@
     --header-title-shadow: #FF8DCB;
     --page-side-padding: 10px;
     --section-width: 355px;
-    --line-height-standard: 23px;
     --content-margin-top: 40px;
     --sections-padding: 50px;
     inline-size: 375px;
@@ -479,7 +479,7 @@
   }
   .decorated-zone::before {
     left: 10px;
-    bottom: 20px;
+    bottom: 10px;
   }
   .decorated-zone::after {
     top: 10px;
@@ -492,6 +492,7 @@
   .header__theme-menu-list {
     display: flex;
     flex-direction: column;
+    gap: 13px;
   }
   .decor-focus {
     line-height: 95.7px;
@@ -507,7 +508,7 @@
     height: 117px;
     justify-self: end;
     align-self: flex-start;
-    padding-top: 34px;
+    padding-top: 40px;
   }
   .content__section__title {
     max-width: var(--mobile-width);
