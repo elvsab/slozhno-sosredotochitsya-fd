@@ -1,6 +1,7 @@
 :root.theme-dark {
   --page-side-padding: 20px;
   --bg-image: url("../images/cover-image-dark.png");
+  --bg-color: #00183F;
   --font-family: "IBM Plex Mono";
   --font-size: 18px;
   --font-weight: 400;
@@ -26,6 +27,7 @@
 :root {
   --page-side-padding: 20px;
   --bg-image: url("../images/cover-image-dark.png");
+  --bg-color: #00183F;
   --font-family: "IBM Plex Mono";
   --font-size: 18px;
   --font-weight: 400;
@@ -71,4 +73,10 @@
   border-radius: 50%;
   margin-left: 10px;
   box-shadow: 0px 0px 4px 2px var(--header-title-shadow);
+}
+
+@media (max-width: 375px) {
+  .theme-dark .rec {
+    top: 10px;
+}
 }
