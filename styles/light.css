@@ -22,15 +22,15 @@
   --section-width: 19.6875em;
   --mobile-width: 355px;
 }
-
+/*
 .theme-light .page {
   background-image: var(--bg-image);
-}
+}*/
 
 .theme-light .rec {
   display: none;
 }
-
+/*
 .theme-light .header__theme-menu-button_type_light {
   border: var(--btn-border);
 }
@@ -116,3 +116,4 @@
     height: 668px;
   }
 }
+*/

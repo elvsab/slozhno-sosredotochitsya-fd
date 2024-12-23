@@ -246,6 +246,7 @@
 }
 
 .gallery__image {
+  display: block;
   inline-size: 100%;
   block-size: 100%;
   max-block-size: 100%;
@@ -355,12 +356,10 @@
 }
 
 @media (min-width: 376px) and (max-width: 768px) {
-  :root {
-    --section-width: 236px;
-    --header-title-shadow: #FF8DCB;
-  }
   .page {
     inline-size: 768px;
+    --section-width: 236px;
+    --header-title-shadow: #FF8DCB;
   }
   .header {
     height: 1024px;
@@ -370,7 +369,9 @@
     align-self: center;
   }
   .header__theme-menu-list {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    padding-top: 113px;
   }
   .decor-focus {
     line-height: 99px;
@@ -384,6 +385,7 @@
     height: 117px;
     justify-self: end;
     align-self: flex-start;
+    padding-top: 40px;
   }
   .content__section__title {
     max-width: var(--section-width);
@@ -423,32 +425,39 @@
   }
   .footer__title {
     text-shadow: 2px 2px 0px var(--header-title-shadow);
+    padding-inline-start: 20px;
   }
 }
 
-@media (width <= 375px) {
-  :root {
+@media (max-width: 375px) {
+  .page {
     --header-title-shadow: #FF8DCB;
     --page-side-padding: 10px;
     --section-width: 355px;
     --line-height-standard: 23px;
     --content-margin-top: 40px;
     --sections-padding: 50px;
-  }
-  .page {
     inline-size: 375px;
-    padding-left: var(--page-side-padding);
-    padding-right: var(--page-side-padding);
+    padding-right: 10px;
   }
   .header {
     height: 668px;
+  }
+  .decorated-zone::before {
+    left: 10px;
+    bottom: 20px;
+  }
+  .decorated-zone::after {
+    top: 10px;
+    right: 0px;
   }
   .header__theme-menu {
     justify-self: end;
     align-self: center;
   }
   .header__theme-menu-list {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
   }
   .decor-focus {
     line-height: 95.7px;
@@ -457,12 +466,14 @@
   .header-title {
     text-shadow: 4px 4px 0px var(--title-decor-bg-color);
     align-self: center;
+    padding-inline-start: 10px;
   }
   .header-paragraph__block {
     width: var(--mobile-width);
     height: 117px;
     justify-self: end;
     align-self: flex-start;
+    padding-top: 34px;
   }
   .content__section__title {
     max-width: var(--mobile-width);
@@ -481,7 +492,7 @@
     grid-template-columns: 1fr;
     gap: var(--sections-item-gap);
   }
-  .content__section__title {
+  .content__section-5tips .content__section__title {
     grid-column: 1 / 2;
   }
   .content__section-5tips__list {
