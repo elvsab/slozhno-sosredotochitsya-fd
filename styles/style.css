@@ -514,7 +514,7 @@
     max-width: var(--mobile-width);
   }
   .content__section__paragraph {
-    line-height: 23px;
+    line-height: var(--line-height-standard);
   }
   .reasons-why__title {
     padding-block-end: 20px;
