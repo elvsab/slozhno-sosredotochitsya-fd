@@ -24,59 +24,43 @@
 }
 
 @media (prefers-color-scheme: dark) {
-:root {
-  --page-side-padding: 20px;
-  --bg-image: url("../images/cover-image-dark.png");
-  --bg-color: #00183F;
-  --font-family: "IBM Plex Mono";
-  --font-size: 18px;
-  --font-weight: 400;
-  --font-weight-bold: 700;
-  --line-height-standard: 23.4px;
-  --sect-title-text-color: #FF0070;
-  --main-text-color: #F1B2CE;
-  --title-decor-text-color: #000028;
-  --sections-padding: 80px;
-  --content-margin-top: 60px;
-  --btn-border: 1px solid #FF0070;
-  --decor-focus-color: #DB00FF;
-  --title-decor-bg-color: #FF0070;
-  --link-shadow: #FF0070;
-  --header-title-shadow: #FF0070;
-  --title-paragraph-gap: 10px;
-  --sections-item-gap: 20px;
-  --section-width: 19.6875em;
-  --mobile-width: 355px;
-}
+  :root {
+    --page-side-padding: 20px;
+    --bg-image: url("../images/cover-image-dark.png");
+    --bg-color: #00183F;
+    --font-family: "IBM Plex Mono";
+    --font-size: 18px;
+    --font-weight: 400;
+    --font-weight-bold: 700;
+    --line-height-standard: 23.4px;
+    --sect-title-text-color: #FF0070;
+    --main-text-color: #F1B2CE;
+    --title-decor-text-color: #000028;
+    --sections-padding: 80px;
+    --content-margin-top: 60px;
+    --btn-border: 1px solid #FF0070;
+    --decor-focus-color: #DB00FF;
+    --title-decor-bg-color: #FF0070;
+    --link-shadow: #FF0070;
+    --header-title-shadow: #FF0070;
+    --title-paragraph-gap: 10px;
+    --sections-item-gap: 20px;
+    --section-width: 19.6875em;
+    --mobile-width: 355px;
+  }
+  .rec {
+    display: block;
+  }
+
+  .rec::after {
+    display: inline-block;
+  }
 }
 
 .theme-dark .rec {
-  position: absolute;
-  top: 20px;
-  right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--font-size);
-  font-weight: var(--font-weight);
-  color: var(--header-title-shadow);
-  line-height: 25px;
-  text-align: center;
+  display: block;
 }
 
 .theme-dark .rec::after {
-  content: '';
-  display: block;
-  width: 9px;
-  height: 9px;
-  background-color: var(--header-title-shadow);
-  border-radius: 50%;
-  margin-left: 10px;
-  box-shadow: 0px 0px 4px 2px var(--header-title-shadow);
-}
-
-@media (max-width: 375px) {
-  .theme-dark .rec {
-    top: 10px;
-}
+  display: inline-block;
 }

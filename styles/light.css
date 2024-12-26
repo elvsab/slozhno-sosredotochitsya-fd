@@ -2,6 +2,7 @@
 :root.theme-light {
   --page-side-padding: 20px;
   --bg-image: url("../images/cover-image-light.png");
+  --bg-color: #FFF1F7;
   --font-family: "IBM Plex Mono";
   --font-size: 18px;
   --font-weight: 400;
