@@ -8,6 +8,7 @@
   --font-weight-bold: 700;
   --line-height-standard: 23.4px;
   --main-text-color: #353430;
+  --menu-text-color: #353430;
   --sect-title-text-color: #353430;
   --title-decor-text-color: #353430;
   --sections-padding: 80px;
@@ -19,6 +20,7 @@
   --link-shadow: #ff8dcb;
   --link-border: 1px solid #353430;
   --header-title-shadow: #ff0070;
+  --footer-title-shadow: #ff0070;
   --title-paragraph-gap: 10px;
   --sections-item-gap: 20px;
   --section-width: 19.6875em;
